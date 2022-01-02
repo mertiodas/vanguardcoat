@@ -38,7 +38,7 @@ void setup() {
   display.clearDisplay();
   dht.begin();               // start with reading the DHT sensor
   pinMode(7,OUTPUT);
-  if(tempValC>20){
+  if(tempValC<20){
     digitalWrite(7,HIGH);
   }
 }
